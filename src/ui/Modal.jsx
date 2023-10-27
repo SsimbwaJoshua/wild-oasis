@@ -51,8 +51,10 @@ const Button = styled.button`
 
 export default function Modal({ children }) {
   return (
-    <StyledModal>
-      <div>{children}</div>
-    </StyledModal>
+    <Overlay>
+      <StyledModal>
+        <div>{children}</div>
+      </StyledModal>
+    </Overlay>
   );
 }
