@@ -6,6 +6,10 @@ export function useSettings() {
     isLoading,
     error,
     data: settings,
-  } = useQuery({ queryKey: ["settings"], queryFn: getSettings });
+  } = useQuery({
+    queryKey: ["settings"],
+    queryFn: getSettings,
+  });
+
   return { isLoading, error, settings };
 }

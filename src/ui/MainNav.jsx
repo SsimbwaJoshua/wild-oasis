@@ -53,7 +53,7 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-export default function MainNav() {
+function MainNav() {
   return (
     <nav>
       <NavList>
@@ -68,14 +68,20 @@ export default function MainNav() {
             <HiOutlineCalendarDays />
             <span>Bookings</span>
           </StyledNavLink>
+        </li>
+        <li>
           <StyledNavLink to="/cabins">
             <HiOutlineHomeModern />
             <span>Cabins</span>
           </StyledNavLink>
+        </li>
+        <li>
           <StyledNavLink to="/users">
             <HiOutlineUsers />
             <span>Users</span>
           </StyledNavLink>
+        </li>
+        <li>
           <StyledNavLink to="/settings">
             <HiOutlineCog6Tooth />
             <span>Settings</span>
@@ -85,3 +91,5 @@ export default function MainNav() {
     </nav>
   );
 }
+
+export default MainNav;
